@@ -1,0 +1,47 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "CommonJS",
+        "moduleResolution": "node",
+        "strict": true,
+        "noImplicitAny": false,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "strictPropertyInitialization": false,
+        "rootDir": "../",
+        "baseUrl": "./",
+        "paths": {
+            "src/*": [
+                "../App/js/src/*"
+            ],
+            "utils": [
+                "../App/utils"
+            ],
+            "Server/*": [
+                "./*"
+            ],
+            "*": [
+                "./node_modules/*",
+            ],
+        },
+        "sourceMap": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "allowSyntheticDefaultImports": true,
+        "allowUnreachableCode": true,
+        "traceResolution": false,
+        "strictNullChecks": true,
+        "resolveJsonModule": true,
+        "types": [
+            // ... your other types
+            "node",
+            "express"
+        ],
+    },
+    "include": [
+        "*.ts"
+    ],
+    "ts-node": {
+        "esm": true 
+    }
+}
